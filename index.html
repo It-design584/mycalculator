@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="index.CSS">
+</head>
+<body>
+    <div class="calculator-container">
+        <div class="calculator">
+            <div class="calculator-display">
+                <div id="expression">0</div>
+                <input type="text" id="display" readonly>
+            </div>
+            <div class="calculator-keys">
+                <button class="key-clear" data-action="clear">AC</button>
+                <button class="key-sign" data-action="sign">±</button>
+                <button class="key-percent" data-action="percent">%</button>
+                <button class="key-operator" data-action="divide">÷</button>
+                
+                <button class="key-number">7</button>
+                <button class="key-number">8</button>
+                <button class="key-number">9</button>
+                <button class="key-operator" data-action="multiply">×</button>
+                
+                <button class="key-number">4</button>
+                <button class="key-number">5</button>
+                <button class="key-number">6</button>
+                <button class="key-operator" data-action="subtract">-</button>
+                
+                <button class="key-number">1</button>
+                <button class="key-number">2</button>
+                <button class="key-number">3</button>
+                <button class="key-operator" data-action="add">+</button>
+                
+                <button class="key-number key-zero">0</button>
+                <button class="key-decimal">.</button>
+                <button class="key-equals" data-action="calculate">=</button>
+            </div>
+        </div>
+        <div class="history-panel">
+            <div class="history-header">
+                <h3>History</h3>
+                <button id="clear-history">Clear</button>
+            </div>
+            <div class="history-list" id="history-list">
+                <!-- History items will be added here -->
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
